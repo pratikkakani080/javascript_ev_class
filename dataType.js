@@ -33,8 +33,83 @@
         let nullishValue = null
 
     // 6. BigInt
-        Bigint() 
+        // Bigint() 
         234n
 
     // 7. Symbol
-// complex
+        console.log(Symbol());
+        console.log(Symbol() === Symbol());
+        
+// complex datatype
+    // Object
+        const photoFrame = { 
+            nameOfGod: 'Hanumanji',
+            isLighting: true,
+            height: '8in',
+            width: '4in',
+            testObj: {
+                testKey: 'testData',
+                test2Obj: {}
+            },
+            testArr: ['testData1', 'testData2']
+         }
+         console.log(photoFrame.testObj.testKey)
+    // Array
+         const photsList = [
+            { 
+            nameOfGod: 'Hanumanji',
+            isLighting: true,
+            height: '8in',
+            width: '4in',
+            testObj: {
+                testKey: 'testData',
+                test2Obj: {}
+            },
+            testArr: ['testData1', 'testData2']
+         },
+         { 
+            nameOfGod: 'Hanumanji',
+            isLighting: true,
+            height: '8in',
+            width: '4in',
+            testObj: {
+                testKey: 'testData',
+                test2Obj: {}
+            },
+            testArr: ['testData1', 'testData2']
+         },
+         { 
+            nameOfGod: 'Ram',
+            isLighting: true,
+            height: '10in',
+            width: '24in',
+            testObj: {
+                testKey: 'testData',
+                test2Obj: {}
+            },
+            
+         },
+         { 
+            nameOfGod: 'Shiva',
+            isLighting: true,
+            height: '12in',
+            width: '8in',
+           
+            testArr: ['testData1', 'testData2']
+         }
+         ]
+         console.log(photsList);
+         
+    // Functions
+         function myFirstFun() {
+            console.log('this is function running');
+         }
+
+         myFirstFun()
+
+         // Arrow function
+         const myFirstArrowFun = () => {
+            console.log('this is arrow function running');
+         }
+
+         myFirstArrowFun()
