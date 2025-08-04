@@ -8,31 +8,39 @@
         // console.log(5 + 4 + '4' + true);
         const newStr = String()
         // console.log(newStr, 66666);
-        const stringToCheckMethods = '   This string is generated to test all the methods \uD800    '
-        console.log(stringToCheckMethods.length);
-        console.log(stringToCheckMethods.charAt(30));
-        console.log(stringToCheckMethods.charCodeAt(30));
-        console.log(stringToCheckMethods.codePointAt(30));
-        console.log(stringToCheckMethods.concat(' ', 'this is merged', ' ', 'string'));
-        console.log(stringToCheckMethods + ' ' + 'this is merged' + ' ' + 'string');
-        console.log(stringToCheckMethods.at(30));
-        console.log(stringToCheckMethods[30]);
-        console.log(stringToCheckMethods.slice(15, 24));
-        console.log(stringToCheckMethods.slice(-15, -3));
-        console.log(stringToCheckMethods.substring(15, 24));
-        console.log(stringToCheckMethods.toUpperCase());
-        console.log(stringToCheckMethods.toLowerCase());
-        console.log(stringToCheckMethods.isWellFormed());
-        console.log(stringToCheckMethods.toWellFormed());
-        console.log(stringToCheckMethods.trim());
-        console.log(stringToCheckMethods.trimStart());
-        console.log(stringToCheckMethods.trimEnd());
-        console.log(stringToCheckMethods.padStart(60, 0));
-        console.log(stringToCheckMethods.padEnd(60, 'T'));
-        console.log(stringToCheckMethods.repeat(4));
-        console.log(stringToCheckMethods.replace('t', 'A'));
-        console.log(stringToCheckMethods.replaceAll('t', 'A'));
-        console.log(stringToCheckMethods.split(' '));
+        const stringToCheckMethods = '   This string is generated to test all the methods \uD800    THIS STRING IS GENERATED TO TEST ALL THE METHODS'
+        // console.log(stringToCheckMethods.length);
+        // console.log(stringToCheckMethods.charAt(30));
+        // console.log(stringToCheckMethods.charCodeAt(30));
+        // console.log(stringToCheckMethods.codePointAt(30));
+        // console.log(stringToCheckMethods.concat(' ', 'this is merged', ' ', 'string'));
+        // console.log(stringToCheckMethods + ' ' + 'this is merged' + ' ' + 'string');
+        // console.log(stringToCheckMethods.at(30));
+        // console.log(stringToCheckMethods[30]);
+        // console.log(stringToCheckMethods.slice(15, 24));
+        // console.log(stringToCheckMethods.slice(-15, -3));
+        // console.log(stringToCheckMethods.substring(15, 24));
+        // console.log(stringToCheckMethods.toUpperCase());
+        // console.log(stringToCheckMethods.toLowerCase());
+        // console.log(stringToCheckMethods.isWellFormed());
+        // console.log(stringToCheckMethods.toWellFormed());
+        // console.log(stringToCheckMethods.trim());
+        // console.log(stringToCheckMethods.trimStart());
+        // console.log(stringToCheckMethods.trimEnd());
+        // console.log(stringToCheckMethods.padStart(60, 0));
+        // console.log(stringToCheckMethods.padEnd(60, 'T'));
+        // console.log(stringToCheckMethods.repeat(4));
+        // console.log(stringToCheckMethods.replace('t', 'A'));
+        // console.log(stringToCheckMethods.replaceAll('t', 'A'));
+        // console.log(stringToCheckMethods.split(' '));
+        // console.log(stringToCheckMethods.indexOf('t'));
+        // console.log(stringToCheckMethods.lastIndexOf('t'));
+        // console.log(stringToCheckMethods.search('t'));
+        // console.log(stringToCheckMethods.match('generated'));
+        // console.log(Array.from(stringToCheckMethods.matchAll(/generated/gi)));
+        // console.log(stringToCheckMethods.includes('generated'));
+        // console.log(stringToCheckMethods.startsWith(' '));
+        // console.log(stringToCheckMethods.endsWith('d'));
 
     // 2. Number
         // numeric 0 - 9
@@ -42,6 +50,12 @@
         // integer and float
         // -2^53 to 2^53
         // -9007199254740992 to 9007199254740992
+        const numberss = 234343
+        const floatingNum = 5.3333333
+        // console.log(numberss.toString());
+        // console.log(String(numberss));
+        // console.log(numberss.toExponential(3));
+        // console.log(floatingNum.toFixed(2));
         
     // 3. Boolean
         // conditional data
@@ -79,6 +93,16 @@
             testArr: ['testData1', 'testData2']
          }
         //  console.log(photoFrame.testObj.testKey)
+        console.log(Object.assign({}, {nameOfGod: 'Shiva'}, {num: 666}))
+        delete photoFrame.testObj
+        console.log(photoFrame);
+        console.log(JSON.stringify(photoFrame))
+        document.writeln(JSON.stringify(photoFrame))
+        console.log(JSON.parse(JSON.stringify(photoFrame)))
+        console.log(Object.keys(photoFrame))
+        console.log(Object.values(photoFrame))
+        console.log(Object.entries(photoFrame))
+        
     // Array
          const photsList = [
             { 
