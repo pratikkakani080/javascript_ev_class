@@ -170,7 +170,7 @@
             testArr: ['testData1', 'testData2']
          }
          ]
-         const arrOfNum = [3,4,5,6,7,8]
+         const arrOfNum = [3,4,5,6,[7,[8, [10]]], 7, 11].flat(3)
         //  console.log(photsList.length);
         //  console.log(arrOfNum.toString());
         //  document.writeln(arrOfNum)
@@ -189,6 +189,34 @@
         //  console.log(photsList.toSpliced(1, 2));
         //  console.log(photsList.splice(1, 2));
         //  console.log(photsList);
+        // console.log(arrOfNum.indexOf(7));
+        // console.log(arrOfNum.lastIndexOf(7));
+        // console.log(arrOfNum.includes(10));
+        // console.log(arrOfNum.flat(3));
+        // console.log(arrOfNum.find((element, index, array) => {
+        //     console.log(element > 8)
+        //     return element > 8
+        // }))
+        // console.log(photsList.find((element, index, array) => {
+        //     console.log(element)
+        //     return element.nameOfGod === 'Ram'
+        // }))
+        // console.log(arrOfNum.findIndex((element, index, array) => {
+        //     console.log(element > 8)
+        //     return element > 8
+        // }))
+        // console.log(photsList.findIndex((element, index, array) => {
+        //     console.log(element)
+        //     return element.nameOfGod === 'Ram'
+        // }))
+         // console.log(arrOfNum.findLast((element, index, array) => {
+        //     console.log(element > 8)
+        //     return element > 8
+        // }))
+         // console.log(arrOfNum.findLastIndex((element, index, array) => {
+        //     console.log(element > 8)
+        //     return element > 8
+        // }))
          
     // Functions
          function myFirstFun() {
@@ -198,8 +226,17 @@
          myFirstFun()
 
          // Arrow function
-         const myFirstArrowFun = () => {
-            // console.log('this is arrow function running');
-         }
+         const myFirstArrowFun = (b, c, d, e, f, g = {}) => {
+            const a = 5
+            const sum = a + b
+            console.log(sum)
+            return sum
+        }
 
-         myFirstArrowFun()
+        //  console.log(myFirstArrowFun(22, 5, 'str', true, [], {}))
+
+
+        //  console.log(myFirstArrowFun(10, 5, 'str', [], {}))
+
+         // callback function
+         // when you pass function as a parameter
