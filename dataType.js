@@ -217,6 +217,31 @@
         //     console.log(element > 8)
         //     return element > 8
         // }))
+
+        const months = ['January', 'February', 'March', 'April', "June", "july"]
+        // console.log(months.sort().reverse());
+        const numList = [3, 6, 1, 9, 1.1, 44]
+        // console.log(numList.sort((a, b) => b - a));
+        // console.log(numList.reverse());
+        // console.log(months.toSorted());
+        // console.log(months.reverse());
+        // console.log(months.toReversed());
+        const dataOfObj = [{ stateName: 'Gujarat' }, { stateName: 'Maharashtra' }, { stateName: 'Tamilnadu' }, { stateName: 'Kashmir' }]
+        // console.log(dataOfObj.sort((a, b) => a.stateName < b.stateName ? 1 : -1));
+        const newList = []
+        numList.forEach((element, index) => {
+            // console.log(element * 2);
+            
+            newList.push(element * 3)
+        })
+        console.log(newList);
+
+        console.log(dataOfObj.map((element, index, array) => element.stateName));
+        console.log(numList.filter((element, index, array) => element > 50));
+        console.log(dataOfObj.filter((element, index, array) => element.stateName.length > 7));
+        
+        
+        
          
     // Functions
          function myFirstFun() {
