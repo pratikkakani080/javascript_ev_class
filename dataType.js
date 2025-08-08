@@ -220,7 +220,7 @@
 
         const months = ['January', 'February', 'March', 'April', "June", "july"]
         // console.log(months.sort().reverse());
-        const numList = [3, 6, 1, 9, 1.1, 44]
+        const numList = [3, 6, 1, 9, 1.1, 44, 4]
         // console.log(numList.sort((a, b) => b - a));
         // console.log(numList.reverse());
         // console.log(months.toSorted());
@@ -234,14 +234,44 @@
             
             newList.push(element * 3)
         })
-        console.log(newList);
+        // console.log(newList);
 
-        console.log(dataOfObj.map((element, index, array) => element.stateName));
-        console.log(numList.filter((element, index, array) => element > 50));
-        console.log(dataOfObj.filter((element, index, array) => element.stateName.length > 7));
+        // console.log(dataOfObj.map((element, index, array) => element.stateName));
+        // console.log(numList.filter((element, index, array) => element > 50));
+        // console.log(dataOfObj.filter((element, index, array) => element.stateName.length > 7));
+        // console.log(numList.every((element, index, array) => {
+        //     console.log(element);
+            
+        //     return element < 10
+        // }));
         
-        
-        
+        // console.log(numList.some((element, index, array) => {
+        //     console.log(element);
+            
+        //     return element > 10
+        // }));
+        // console.log(Array.from('2342345352'));
+        // const A = [4, 5 ,7 ,8 ,4 ,2 ,4, 6]
+        // const B = [4,7,85,3,4,5,7,54,32]
+        // const C = [...A, ...B]
+        // console.log(C)
+
+        // const a = { key1: 'value1' }
+        // const b = { key2: 'value2' }
+        // const c = { ...a, ...b }
+        // console.log(c)
+
+        // const str = 'test'
+        // const d = [ ...str ]
+        // console.log(d)
+            // [3, 6, 1, 9, 1.1, 44, 4]
+            const objOfNum = { 0: 3, 1: 6, 2: 1, 3: 9, 4: 1.1, 5: 44, 6: 4 }
+
+        // console.log(numList);
+        // console.log(numList.reduce((accumulator, currentValue) => {
+        //     console.log(accumulator, currentValue);
+        //     return {}
+        // }, 0))
          
     // Functions
          function myFirstFun() {
